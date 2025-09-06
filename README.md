@@ -19,7 +19,7 @@
 
 
 
-### Use:
+### How To Use:
 - index.js
     - index.js is the main file that you need to run for the bot to be active
     - Without this file running the bot will be offline
