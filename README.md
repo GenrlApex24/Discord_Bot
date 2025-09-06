@@ -27,16 +27,18 @@
         - While not running file<br>
             ![alt text](assets/imgs/offline.png)
         - While running file<br>
-        ![alt text](assets/imgs/online.png)
+            ![alt text](assets/imgs/online.png)
 
 - register-commands.js
     - Run this file to register slash commands
-    -       {
-                name: "hey",
-                description: "Replies with hey!",
-            },
-
-        ![alt text](assets/imgs/hey.png)
+    - Example
+        -       {
+                    name: "hey",
+                    description: "Replies with hey!",
+                },
+    
+        - ![alt text](assets/imgs/hey.png)
+    
     - You only need to run this once to register the commands
     - You can customise the name and description to match your command
     - When a command registry is successful it will print "Registered commands successfully!" to the console
