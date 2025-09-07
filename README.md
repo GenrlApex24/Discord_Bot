@@ -4,7 +4,7 @@
 
 
 ### Requirements:<br>
-- I used <a href="https://nodejs.org/en">nodejs</a> as the js backend which i also recommend
+- I used <a href="https://nodejs.org/en">nodejs</a> runtime envrioment which is required as you need npm
 - Use npm to install the <a href="https://discord.js.org/">discord.js</a> & <a href="https://www.npmjs.com/package/dotenv">dotenv</a>
 
 
