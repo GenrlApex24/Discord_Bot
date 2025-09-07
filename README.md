@@ -31,6 +31,9 @@
 
 - register-commands.js
     - Run this file to register slash commands
+        - You only need to run this once to register the commands
+        - You can add as many of the objects below which are the descriptors (as shown bellow)
+        - When command registry is successful it will print "Registered commands successfully!" to the console
     - Example
         -       {
                     name: "hey",
@@ -38,7 +41,12 @@
                 },
     
         - ![alt text](assets/imgs/hey.png)
-    
-    - You only need to run this once to register the commands
-    - You can customise the name and description to match your command
-    - When a command registry is successful it will print "Registered commands successfully!" to the console
+
+
+### Slash commands:
+- /hey
+    - Replies with hey!
+- /ping
+    - Replies with Pong!
+- /news
+    - Replies with the top 5 news strories on bleeping computer from their RSS feed

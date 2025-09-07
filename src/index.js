@@ -1,5 +1,19 @@
 require("dotenv").config();
 const {Client, IntentsBitField} = require("discord.js");
+let Parser = require("rss-parser");
+
+let parser = new Parser();
+
+function get_news(){
+    (async () => {
+        let feed = await parser.parseURL("https://www.bleepingcomputer.com/feed/");
+        console.log(feed.title);
+
+        feed.items.forEach(item => {
+            console.log(`${item.title}: ${item.link}`)
+        });
+    })();
+};
 
 const client = new Client({
     intents: [
@@ -32,6 +46,23 @@ client.on("interactionCreate", (interaction) => {
 
         if (interaction.commandName === "ping"){
             interaction.reply("Pong!")
+        }
+
+        if (interaction.commandName === "news"){
+            (async () => {
+                try{
+                    let feed = await parser.parseURL("https://www.bleepingcomputer.com/feed/");
+            
+                    await interaction.reply("Here is todays news stories!");
+                
+                    feed.items.slice(0, 5).forEach(item => {
+                        interaction.followUp(`${item.title} \n${item.content} \n${item.link} \n\n`)
+                    })
+                
+                } catch (err) {
+                    interaction.reply("Failed to get news! please try again or contact the bots administrator");
+                }
+            })();
         }
     }
 });
