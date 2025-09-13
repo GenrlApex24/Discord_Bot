@@ -18,7 +18,6 @@
         - CLIENT_ID
 
 
-
 ### How To Use:
 - index.js
     - index.js is the main file that you need to run for the bot to be active
@@ -38,9 +37,15 @@
 
 
 ### Slash commands:
-- ```/hey ```
-    - Replies with hey!
-- ```/ping```
-    - Replies with Pong!
-- ```/news```
-    - Replies with the top 5 news strories on bleeping computer from their RSS feed
+```
+/rules
+```
+- Sends a list of pre-defined server rules
+```
+/calculator
+```
+- add / subtract / multiply / divide 2  numbers of choice
+```
+/news
+```
+- Replies with the top 5 news strories on bleeping computer from their RSS feed
