@@ -5,7 +5,7 @@
 
 ### Requirements:<br>
 - I used <a href="https://nodejs.org/en">nodejs</a> runtime envrioment which is required as you need npm
-- Use npm to install the <a href="https://discord.js.org/">discord.js</a> & <a href="https://www.npmjs.com/package/dotenv">dotenv</a>
+- Use npm to install the <a href="https://discord.js.org/">discord.js</a> & <a href="https://www.npmjs.com/package/dotenv">dotenv</a> & <a href="https://www.npmjs.com/package/rss-parser">rss-parser</a>
 
 
 ### .env File:
@@ -34,19 +34,13 @@
         - You only need to run this once to register the commands
         - You can add as many of the objects below which are the descriptors (as shown bellow)
         - When command registry is successful it will print "Registered commands successfully!" to the console
-    - Example
-        -       {
-                    name: "hey",
-                    description: "Replies with hey!",
-                },
-    
-        - ![alt text](assets/imgs/hey.png)
+
 
 
 ### Slash commands:
-- /hey
+- ```/hey ```
     - Replies with hey!
-- /ping
+- ```/ping```
     - Replies with Pong!
-- /news
+- ```/news```
     - Replies with the top 5 news strories on bleeping computer from their RSS feed
